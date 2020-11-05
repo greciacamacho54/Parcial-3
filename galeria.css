@@ -1,0 +1,151 @@
+.galeria h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.galeria p {
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.galeria .contenedor4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.galeria .contenedor4 .imagen {
+  width: 350px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .5rem;
+  position: relative;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.galeria .contenedor4 .imagen img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: ease-in-out .25;
+  transition: ease-in-out .25;
+  height: 100%;
+}
+
+.galeria .contenedor4 .imagen img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease-in-out .25s;
+  transition: ease-in-out .25s;
+  display: none;
+  opacity: 0;
+}
+
+.lightbox span {
+  position: fixed;
+  top: 90px;
+  right: 290px;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+  -webkit-transition: ease-in-out .15s;
+  transition: ease-in-out .15s;
+}
+
+.lightbox span:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.lightbox .slideshow {
+  width: 60%;
+  height: 80%;
+  background: white;
+  color: #000;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lightbox .slideshow img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (min-width: 800px) {
+  .contenedor4 {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+  .slideshow img {
+    width: 98%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .lightbox {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=galeria.css.map */

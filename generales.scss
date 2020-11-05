@@ -1,0 +1,52 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+body{
+    font-family: sans-serif;
+}
+   
+  
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: #000000;
+    top:0;
+    left: 0;
+    z-index: 100;
+
+    .contenedor2{
+        width: 98%;
+        margin: auto;
+        display: table;
+        
+    }
+
+
+  
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.tareas{
+    text-align: center;
+}
+
+
+
+
+
